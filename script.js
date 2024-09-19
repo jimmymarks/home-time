@@ -11,13 +11,15 @@ function updateTime() {
     const utcTime = currentTime.toISOString().slice(11, 19); // ISO format returns UTC time
 
     // Display the times on the page
-    document.getElementById("time").innerHTML = `
-        <p>Local Time: ${currentTime.toLocaleTimeString([], { hour12: false })}</p>
-        <p>Eastern Time (ET): ${easternTime}</p>
+    document.getElementById("hometime").innerHTML = `
+        <p>Local: ${currentTime.toLocaleTimeString([], { hour12: false })}</p>
+        <p>UTC: ${utcTime}</p> 
+    `;
+        
+    document.getElementById("othertimes").innerHTML = `
         <p>Central Time (CT): ${centralTime}</p>
         <p>Mountain Time (MT): ${mountainTime}</p>
         <p>Pacific Time (PT): ${pacificTime}</p>
-        <p>UTC: ${utcTime}</p>
     `;
 }
 
