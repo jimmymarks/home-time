@@ -12,8 +12,8 @@ function updateTime() {
 
     // Display the times on the page
     document.getElementById("hometime").innerHTML = `
-        <p>Local: ${currentTime.toLocaleTimeString([], { hour12: false })}</p>
-        <p>UTC: ${utcTime}</p> 
+        <h2>Local: ${currentTime.toLocaleTimeString([], { hour12: false })}</h2>
+        <p><strong>UTC: ${utcTime}</strong></p> 
     `;
         
     document.getElementById("othertimes").innerHTML = `
