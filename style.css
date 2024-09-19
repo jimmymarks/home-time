@@ -14,10 +14,17 @@ body {
 .container {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 h1 {
     font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 1.8rem;
     margin-bottom: 1rem;
     font-weight: 400;
 }
