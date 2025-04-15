@@ -13,10 +13,19 @@ body {
 }
 
 .container {
-    width: 100%;
+    width: fit-content;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.container > div {
+    flex: 1 0;
+}
+
+#hometime {
+    display: flex;
+    justify-content: center;
 }
 
 h1 {
@@ -33,4 +42,16 @@ h2 {
 
 #time {
     font-size: 1.5rem;
+}
+
+@media (min-width: 720px) {
+    .container {
+        width: 75%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .container > div {
+        flex: 1 0 48%;
+    }
 }
