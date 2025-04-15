@@ -12,11 +12,11 @@ function updateTime() {
 
     // Display the times on the page
     document.getElementById("hometime").innerHTML = `
-        <h2>Local: ${currentTime.toLocaleTimeString([], { hour12: false })}</h2>
-        <p><strong>UTC: ${utcTime}</strong></p> 
+        <h2>UTC: ${utcTime}</h2>
     `;
         
     document.getElementById("othertimes").innerHTML = `
+        <p><strong>Eastern Time (CT): ${easternTime}</strong></p>
         <p>Central Time (CT): ${centralTime}</p>
         <p>Mountain Time (MT): ${mountainTime}</p>
         <p>Pacific Time (PT): ${pacificTime}</p>
